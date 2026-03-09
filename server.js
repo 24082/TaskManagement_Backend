@@ -9,7 +9,10 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://taskmanagementfrontend-production.up.railway.app"
+}));
+
 app.use(express.json());
 
 app.use("/api/tasks", taskRoutes);
