@@ -10,7 +10,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin: "https://taskmanagementfrontend-production.up.railway.app"
+  origin: "https://task-management-nine-jet.vercel.app/"
 }));
 
 app.use(express.json());
